@@ -1,37 +1,189 @@
-## Welcome to GitHub Pages
+<html>
+    
+    <head>
+        
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <title>StartPage</title>
+        
+    </head>
+    
+    <body onload="loadColors();">
+        
+        <span>
+        
+            <h1>WELCOME TO</h1>
+            <h2>THE PARADISE</h2>
+            <img src="sun.gif" class="sun">
 
-You can use the [editor on GitHub](https://github.com/TiganeteaRobert/TiganeteaRobert.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+            <div class="container" id="main">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+                <div class="category">
 
-### Markdown
+                    <h3>Social</h3>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                    <a 
+href="https://www.reddit.com/r/popular/?geo_filter=GLOBAL">Reddit</a>
+                    <a href="https://www.reddit.com/r/gaming">Gaming</a>
+                    <a href="https://www.reddit.com/r/askreddit">AskReddit</a>
+                    <a href="https://www.reddit.com/r/hmm">Hmm...</a>
+                </div>
 
-```markdown
-Syntax highlighted code block
+                <div class="category">
 
-# Header 1
-## Header 2
-### Header 3
+                    <h3>Social</h3>
 
-- Bulleted
-- List
+                    <a href="https://facebook.com/">facebook</a>
+                    <a href="https://youtube.com/">youtube</a>
+                    <a href="https://twitch.tv/">twitch</a>
+                    <a href="https://discordapp.com/channels/@me">discord</a>
+                    <a href="https://mail.yahoo.com/d/folders/1">Yahoo! Mail</a>
+                    <a href="https://stackoverflow.com/">stack overflow</a>
 
-1. Numbered
-2. List
+                </div>
 
-**Bold** and _Italic_ and `Code` text
+                <div class="category">
 
-[Link](url) and ![Image](src)
-```
+                    <h3>Music</h3>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+                    <a href="https://soundcloud.com/">Soundcloud</a>
+                    <a href="https://open.spotify.com/browse/featured">Spotify</a>
+                    <a 
+href="http://www.youtube-mp3.org/">Youtube to MP3</a>
 
-### Jekyll Themes
+                </div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TiganeteaRobert/TiganeteaRobert.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+                <div class="category">
 
-### Support or Contact
+                    <h3>Popculture</h3>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+                    <a href="https://gamepressure.com/">gamepressure</a>
+                    <a href="https://mobafire.com/">mobafire</a>
+                    <a href="http://filmweb.pl/">filmweb</a>
+                    <a href="http://jbzd.pl/">jebzdzidy</a>
+
+                </div>
+
+                <div class="category">
+
+                    <h3>Random</h3>
+
+                    <a href="https://github.com/sizol8/sunset/tree/gh-pages">github</a>
+                    <a href="https://kat.cr/">kickass</a>
+                    <a href="https://piratebays.co/">Piratebay</a>
+                    <a href="https://olx.ro/">Olx</a>
+
+                </div>
+
+            </div>
+
+            <div class="container" id="second" style="display:none;">
+
+                <div class="category" style="height: 0px;">
+
+                </div>
+
+                <div class="category">
+
+                    <h3>Playlists</h3>
+
+                    <a href="https://www.youtube.com/watch?v=0HMiVtCoCNY&list=LLO7M-4M_vt38hSoc6zJGAsg">liked videos</a>
+                    <a href="https://www.youtube.com/watch?v=rFywcnKDVUk&list=PLzZ0CQPruwO9uJnybQH6KbHxXKWERLOUy">chill rap</a>
+                    <a href="https://www.youtube.com/watch?v=JyBV4yinJ38&list=RDJyBV4yinJ38">vaporwave</a>
+                    <a href="https://www.youtube.com/watch?v=-oVW8gcse4g&list=PLzZ0CQPruwO9IjczPndw9bqiHXORwtjED">metal</a>
+                    <a href="https://www.youtube.com/watch?v=yyDUC1LUXSU&list=PLzZ0CQPruwO8SEXjTW0guQ-MvLMRJegI8">pop</a>
+                    <a href="https://www.youtube.com/watch?v=D0f8NfwRtpc&list=PLzZ0CQPruwO_z20uySHSCVCw801p7WOmz">festival trap</a>
+                    <a href="https://www.youtube.com/watch?v=B0IwsK5MDsM&list=PLzZ0CQPruwO_IK3QBrIhVlHF2QJtL9chg">dubstep</a>
+
+                </div>
+
+                <div class="category">
+
+                    <h3>Streams</h3>
+
+                    <a href="https://twitch.tv/riotgames/">riot games</a>
+                    <a href="https://twitch.tv/esl_csgo/">esl csgo</a>
+                    <a href="https://twitch.tv/cohhcarnage/">cohh carnage</a>
+                    <a href="https://twitch.tv/imaqtpie/">imaqtpie</a>
+                    <a href="https://twitch.tv/mushisgosu/">gosu</a>
+
+                </div>
+
+                <div class="category">
+
+                    <h3>Settings</h3>
+
+                    <input type="range" min="0" max="360" value="0" oninput="changeHue(this.value);">
+                    <input type="range" min="0" max="200" value="100" oninput="changeSat(this.value);">
+                    <input type="range" min="50" max="150" value="100" oninput="changeCon(this.value);">
+
+                </div>
+
+            </div>
+
+            <label id="one" onclick="showMain();"></label>
+            <label id="two" onclick="showSecond();"></label>
+        </span>
+        <script>
+            
+            var hue;
+            var sat;
+            var con;
+            
+            function loadColors() {
+                var ck = document.cookie.split("; ");
+                
+                changeHue(getCookie('hue'));
+                changeSat(getCookie('sat'));
+                changeCon(getCookie('con'));
+                
+                document.getElementsByTagName("input")[0].value = getCookie('hue');
+                document.getElementsByTagName("input")[1].value = getCookie('sat');
+                document.getElementsByTagName("input")[2].value = getCookie('con');
+                
+            }
+            
+            function getCookie(name) {
+                var value = "; " + document.cookie;
+                var parts = value.split("; " + name + "=");
+                if (parts.length == 2) return parts.pop().split(";").shift();
+            }
+            
+            function setCookie(name, value) {
+                document.cookie = name + "=" + value + "; path=/";
+            }
+            
+            function changeHue(value){
+                setCookie('hue', value);
+                document.getElementsByTagName("body")[0].style.webkitFilter = "hue-rotate("+value+"deg)";
+            }
+            
+            function changeSat(value){
+                setCookie('sat', value);
+                document.getElementsByTagName("html")[0].style.webkitFilter = "saturate("+value+"%)";
+            }
+            
+            function changeCon(value){
+                setCookie('con', value);
+                document.getElementsByTagName("span")[0].style.webkitFilter = "contrast("+value+"%)";
+            }
+            
+            function showMain() {
+                document.getElementById("one").style.border = "3px solid #43FDCA";
+                document.getElementById("two").style.border = "3px solid #EFCBA7";
+                document.getElementById("main").style.display = "inline";
+                document.getElementById("second").style.display = "none";
+            }
+            
+            function showSecond() {
+                document.getElementById("one").style.border = "3px solid #EFCBA7";
+                document.getElementById("two").style.border = "3px solid #43FDCA";
+                document.getElementById("main").style.display = "none";
+                document.getElementById("second").style.display = "inline";   
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>
